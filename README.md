@@ -1,3 +1,7 @@
+[![CircleCI](https://circleci.com/gh/muramurasan/debride2okuribito/tree/master.svg?style=shield)](https://circleci.com/gh/muramurasan/debride2okuribito/tree/master)
+[![Code Climate](https://codeclimate.com/github/muramurasan/debride2okuribito/badges/gpa.svg)](https://codeclimate.com/github/muramurasan/debride2okuribito)
+[![Test Coverage](https://codeclimate.com/github/muramurasan/debride2okuribito/badges/coverage.svg)](https://codeclimate.com/github/muramurasan/debride2okuribito/coverage)
+
 # DebrideToOkuribito
 
 https://rubygems.org/gems/debride2okuribito
