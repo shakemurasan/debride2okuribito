@@ -11,11 +11,23 @@ module DebrideToOkuribito
     end
 
     def read_debride(argv)
-      puts "--- Run debride..."
+      puts "--- Run debride and convert to yaml..."
       debride = Debride.run(argv)
-      puts "--- Convert yaml..."
       debride_to_hash(debride)
     end
+
+    def write_yaml(hash)
+      yaml = YAML.dump(hash)
+
+      # Workaround...
+      yaml.gsub!(/^---\n/, "")
+      yaml.gsub!(/^- /, "  - ")
+
+      generate_file(yaml, FILE_NAME)
+      puts "--- 'okuribito.yml' has been generated."
+    end
+
+    private
 
     def debride_to_hash(debride)
       hash = {}
@@ -32,19 +44,6 @@ module DebrideToOkuribito
       end
       hash
     end
-
-    def write_yaml(hash)
-      yaml = YAML.dump(hash)
-
-      # Workaround...
-      yaml.gsub!(/^---\n/, "")
-      yaml.gsub!(/^- /, "  - ")
-
-      generate_file(yaml, FILE_NAME)
-      puts "--- 'okuribito.yml' has been generated."
-    end
-
-    private
 
     def generate_file(obj, filename)
       f = File.open(filename, "w")
