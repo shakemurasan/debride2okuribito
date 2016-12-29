@@ -1,4 +1,5 @@
 require "spec_helper"
+require "debride2okuribito"
 
 describe DebrideToOkuribito do
   let(:converter) { DebrideToOkuribito::Converter.new }
