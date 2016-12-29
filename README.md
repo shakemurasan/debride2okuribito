@@ -1,6 +1,6 @@
 # DebrideToOkuribito
 
-https://rubygems.org/gems/debride_to_okuribito
+https://rubygems.org/gems/debride2okuribito
 
 DebrideToOkuribito converts the execution result of "Debride" to yaml for "Okuribito".
 
@@ -25,7 +25,7 @@ Please, refer to the github repository for details: https://github.com/muramuras
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'debride_to_okuribito'
+gem 'debride2okuribito'
 ```
 
 And then execute:
@@ -37,7 +37,7 @@ $ bundle
 Or install it yourself as:
 
 ```
-$ gem install debride_to_okuribito
+$ gem install debride2okuribito
 ```
 
 ## Usage
@@ -47,7 +47,7 @@ Usage is very easy.
 If you enter the following command, you can get yaml for "Okuribito" with potentially uncalled methods written.
 
 ```
-$ debride_to_okuribito ./
+$ debride2okuribito ./
 --- Run debride...
 --- Convert yaml...
 --- 'okuribito.yml' has been generated.
@@ -56,7 +56,7 @@ $ debride_to_okuribito ./
 The available options are "Debride" compliant.
 
 ```
-$ debride_to_okuribito --rails app
+$ debride2okuribito --rails app
 --- Run debride...
 --- Convert yaml...
 --- 'okuribito.yml' has been generated.

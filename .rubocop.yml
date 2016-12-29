@@ -1,6 +1,6 @@
 AllCops:
   Exclude:
-    - 'debride_to_okuribito.gemspec'
+    - 'debride2okuribito.gemspec'
     - 'spec/spec_helper.rb'
 
 Documentation:

@@ -1,8 +1,0 @@
-require "debride"
-require "debride_to_okuribito"
-
-puts "--- Run debride..."
-debride = Debride.run(ARGV)
-puts "--- Convert yaml..."
-DebrideToOkuribito::write_yaml(DebrideToOkuribito::debride_to_hash(debride))
-puts "--- 'okuribito.yml' has been generated."

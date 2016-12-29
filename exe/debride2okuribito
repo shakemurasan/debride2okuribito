@@ -1,0 +1,3 @@
+require "debride2okuribito"
+
+DebrideToOkuribito::Converter.new.convert_yaml(ARGV)

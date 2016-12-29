@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in debride_to_okuribito.gemspec
+# Specify your gem's dependencies in debride2okuribito.gemspec
 gemspec
