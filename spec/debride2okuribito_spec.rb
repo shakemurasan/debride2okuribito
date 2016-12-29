@@ -3,10 +3,6 @@ require "spec_helper"
 describe DebrideToOkuribito do
   let(:converter) { DebrideToOkuribito::Converter.new }
 
-  before do
-    allow(converter).to receive(:generate_file)
-  end
-
   describe "#convert_yaml" do
     before do
       allow(converter).to receive(:read_debride)
@@ -19,10 +15,23 @@ describe DebrideToOkuribito do
   end
 
   describe "#read_debride" do
-    let(:ret_hash) { { "TestTarget" => ["#deprecated_method", ".deprecated_self_method"] } }
+    let(:ret) { { "TestTarget" => ["#deprecated_method", ".deprecated_self_method"] } }
 
     subject { converter.read_debride(["spec/support/test_target"]) }
 
-    it { is_expected.to eq ret_hash }
+    it { is_expected.to eq ret }
+  end
+
+  describe "#write_yaml" do
+    let(:args) { { "TestTarget" => ["#deprecated_method", ".deprecated_self_method"] } }
+    let(:expect_obj) { "TestTarget:\n  - \"#deprecated_method\"\n  - \".deprecated_self_method\"\n" }
+    let(:expect_filename) { "okuribito.yml" }
+
+    before do
+      allow(converter).to receive(:generate_file)
+      converter.write_yaml(args)
+    end
+
+    it { expect(converter).to have_received(:generate_file).with(expect_obj, expect_filename) }
   end
 end
