@@ -13,9 +13,7 @@ module DebrideToOkuribito
           ary << ".#{method}"
         end
       end
-      unless ary.empty?
-        hash.store(klass, ary)
-      end
+      hash.store(klass, ary) unless ary.empty?
     end
     hash
   end
@@ -24,8 +22,8 @@ module DebrideToOkuribito
     yaml = YAML.dump(hash)
 
     # Workaround...
-    yaml.gsub!(/^---\n/ , "")
-    yaml.gsub!(/^- / , "  - ")
+    yaml.gsub!(/^---\n/, "")
+    yaml.gsub!(/^- /, "  - ")
 
     f = File.open("okuribito.yml", "w")
     f.write(yaml)

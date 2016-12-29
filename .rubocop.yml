@@ -1,0 +1,20 @@
+AllCops:
+  Exclude:
+    - 'debride_to_okuribito.gemspec'
+    - 'spec/spec_helper.rb'
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Max: 100
+  Exclude:
+    - "spec/**/*"
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  SupportedStyles:
+    - double_quotes
+
+Metrics/MethodLength:
+  Max: 20
