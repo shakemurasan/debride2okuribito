@@ -52,8 +52,7 @@ If you enter the following command, you can get yaml for "Okuribito" with potent
 
 ```
 $ debride2okuribito ./
---- Run debride...
---- Convert yaml...
+--- Run debride and convert to yaml...
 --- 'okuribito.yml' has been generated.
 ```
 
@@ -61,8 +60,7 @@ The available options are "Debride" compliant.
 
 ```
 $ debride2okuribito --rails app
---- Run debride...
---- Convert yaml...
+--- Run debride and convert to yaml...
 --- 'okuribito.yml' has been generated.
 ```
 
