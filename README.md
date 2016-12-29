@@ -2,7 +2,7 @@
 
 https://rubygems.org/gems/debride_to_okuribito
 
-DebrideToOkuribito converts the execution result of 'Debride' to yaml for 'Okuribito'.
+DebrideToOkuribito converts the execution result of "Debride" to yaml for "Okuribito".
 
 ## Description citation
 
@@ -10,8 +10,7 @@ DebrideToOkuribito converts the execution result of 'Debride' to yaml for 'Okuri
 
 > Analyze code for potentially uncalled / dead methods, now with auto-removal.
 
-Please, refer to the github repository for details.
-https://github.com/seattlerb/debride
+Please, refer to the github repository for details: https://github.com/seattlerb/debride
 
 ### What is Okuribito
 
@@ -19,8 +18,7 @@ https://github.com/seattlerb/debride
 >
 > In other words, it can be used in order to extract the really uncalled method.
 
-Please, refer to the github repository for details.
-https://github.com/muramurasan/okuribito
+Please, refer to the github repository for details: https://github.com/muramurasan/okuribito
 
 ## Installation
 
@@ -46,7 +44,7 @@ $ gem install debride_to_okuribito
 
 Usage is very easy.
 
-If you enter the following command, you can get yaml for 'Okuribito' with potentially uncalled methods written.
+If you enter the following command, you can get yaml for "Okuribito" with potentially uncalled methods written.
 
 ```
 $ debride_to_okuribito ./
@@ -55,7 +53,7 @@ $ debride_to_okuribito ./
 --- 'okuribito.yml' has been generated.
 ```
 
-The available options are 'Debride' compliant.
+The available options are "Debride" compliant.
 
 ```
 $ debride_to_okuribito --rails app
