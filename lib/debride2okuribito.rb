@@ -36,7 +36,7 @@ module DebrideToOkuribito
       yaml.gsub!(/^- /, "  - ")
 
       generate_file(yaml, FILE_NAME)
-      puts "--- "okuribito.yml" has been generated."
+      puts "--- 'okuribito.yml' has been generated."
     end
 
     private
